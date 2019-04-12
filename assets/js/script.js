@@ -156,6 +156,36 @@
         = STICKY HEADER
     -------------------------------------------*/
 
+    $("#aboutusLink").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#aboutUs").offset().top
+        }, 2000);
+    });
+
+    $("#serviceLink").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#service").offset().top
+        }, 2000);
+    });
+
+    $("#projectLink").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#project").offset().top
+        }, 2000);
+    });
+
+    $("#blogLink").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#blog").offset().top
+        }, 2000);
+    });
+
+    $("#contactLink").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 2000);
+    });
+
     // Function for clone an element for sticky menu
     function cloneNavForSticyMenu($ele, $newElmClass) {
         $ele.addClass('original').clone().insertAfter($ele).addClass($newElmClass).removeClass('original');

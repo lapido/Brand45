@@ -65,7 +65,7 @@ TABLE OF CONTENTS:
 --------------------------------------------------------------*/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -114,7 +114,13 @@ a:hover {
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%;   
+    height: auto;
+    padding: 0px 0px;
+}
+
+.brand-logo-image{
+    max-width: 15vmax;
 }
 
 button,
@@ -575,6 +581,16 @@ mobile menu
     padding-bottom: 43px;
     color: #555;
 }
+/* the search-bar position for mobile */
+@media only screen and (max-width: 575px) {
+    .search ul li a i {
+        margin-top: 5px;
+        padding-bottom: 43px;
+        color: #555;
+        position: absolute;
+        top: 49px;
+    }
+  }
 
 .search ul li>ul {
     position: absolute;
@@ -661,6 +677,10 @@ mobile menu
 .slide-caption {
     z-index: 19;
     padding-bottom: 45px;
+    position: absolute;
+    left: 1%;
+    top: 0px;
+    width: 100%;
 }
 
 .hero .slide {
@@ -687,6 +707,7 @@ mobile menu
 .hero .slide .row {
     display: table-cell;
     vertical-align: middle;
+    position: relative;
 }
 
 .hero .slick-prev,
@@ -725,6 +746,7 @@ mobile menu
 .hero .slick-next:hover {
     background: #671C57;
     border: none;
+    border-radius: 50%;
 }
 
 .hero .slick-prev:hover:before,
@@ -798,7 +820,7 @@ mobile menu
 *******************************/
 .hero-style-1 .slide-caption p,
 .hero-style-2 .slide-caption p {
-    font-size: 16px;
+    font-size: 1.3vmax;
     color: #fff;
     line-height: 30px;
     font-weight: 300;
@@ -843,10 +865,11 @@ mobile menu
 
 .hero-style-1 .slide-caption h2 span:first-child,
 .hero-style-2 .slide-caption h2 span:first-child {
-    font-size: 45px;
+    font-size: 3vmax;
     font-weight: 300;
     padding: 0px 20px;
     line-height: 71px;
+
 }
 
 @media (max-width: 450px) {
